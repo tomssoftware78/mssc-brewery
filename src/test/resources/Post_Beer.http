@@ -1,0 +1,11 @@
+###
+
+POST http://{{host}}:{{port}}/api/v1/beer
+Content-Type: application/json
+
+{
+"beerName": "Jupiler",
+"beerStyle": "Pils",
+"upc": 12345
+}
+###
