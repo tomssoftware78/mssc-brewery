@@ -22,4 +22,11 @@ public class BeerServiceImpl implements BeerService {
     public void updateBeer(UUID beerId, BeerDto beerDto) {
         //TODO implement
     }
+  
+    public BeerDto saveNewBeer(BeerDto beerDto) {
+        return BeerDto.builder()
+                .id(UUID.randomUUID())
+                .beerName("Baskwadder blond")
+                .build();
+    }
 }
