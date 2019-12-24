@@ -1,0 +1,10 @@
+### GET request with a header
+GET https://httpbin.org/ip
+Accept: application/json
+
+###
+
+GET http://{{host}}:{{port}}/api/v1/beer/{{$uuid}}
+Accept: application/json
+
+###
