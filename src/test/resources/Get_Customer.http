@@ -1,0 +1,6 @@
+###
+
+GET http://{{host}}:{{port}}/api/v1/customer/{{$uuid}}
+Accept: application/json
+
+###
