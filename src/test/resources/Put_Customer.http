@@ -1,0 +1,10 @@
+###
+
+PUT http://{{host}}:{{port}}/api/v1/customer/{{$uuid}}
+Content-Type: application/json
+
+{
+  "name": "My new customer",
+}
+
+###
