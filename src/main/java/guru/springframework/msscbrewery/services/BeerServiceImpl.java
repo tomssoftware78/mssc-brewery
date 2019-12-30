@@ -19,6 +19,10 @@ public class BeerServiceImpl implements BeerService {
     }
 
     @Override
+    public void updateBeer(UUID beerId, BeerDto beerDto) {
+        //TODO implement
+    }
+  
     public BeerDto saveNewBeer(BeerDto beerDto) {
         return BeerDto.builder()
                 .id(UUID.randomUUID())

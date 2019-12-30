@@ -28,6 +28,13 @@ public class BeerController {
         return new ResponseEntity<>(beerService.getBeerById(beerId), HttpStatus.OK);
     }
 
+    @PutMapping("/{beerId}")
+    public ResponseEntity handleUpdate(@PathVariable("beerId") UUID beerId, @RequestBody BeerDto beerDto) {
+        beerService.updateBeer(beerId, beerDto);
+
+        return new ResponseEntity(HttpStatus.NO_CONTENT);
+    }
+
     @PostMapping("")
     public ResponseEntity handlePost(BeerDto beerDto) {
         BeerDto savedBeerDto = beerService.saveNewBeer(beerDto);
@@ -39,5 +46,4 @@ public class BeerController {
 
         return new ResponseEntity(headers, HttpStatus.CREATED);
     }
-
 }

@@ -1,0 +1,11 @@
+###
+
+PUT http://{{host}}:{{port}}/api/v1/beer/{{$uuid}}
+Content-Type: application/json
+
+{
+  "beerName": "My new beer",
+  "beerStyle": "pils"
+}
+
+###
