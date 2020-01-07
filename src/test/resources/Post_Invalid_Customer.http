@@ -1,0 +1,10 @@
+###
+
+POST http://{{host}}:{{port}}/api/v1/customer
+Content-Type: application/json
+
+{
+  "name": "1"
+}
+
+###
